@@ -1,0 +1,18 @@
+from tkinter import *
+
+master = Tk()
+
+elemento = StringVar()
+
+listbox = Listbox(master)
+
+for item in ["Lio Messi", "Angelito Di María", "Rodri De Paul", "Nico Otamendi", "Enzo Fernandez", "Dibu Martinez", "Cuti Romero", "Julian Alvarez"]:
+    listbox.insert(END, item)
+
+listbox.pack()
+
+label = Label(text="Lista de nombres de campeones del mundo")
+label.pack()
+
+
+master.mainloop()
